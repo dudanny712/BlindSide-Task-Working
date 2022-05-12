@@ -7,11 +7,11 @@ import {
 } from '../actionType'
 
 const initialState = {
-   accessToken: sessionStorage.getItem('ytc-access-token')
-      ? sessionStorage.getItem('ytc-access-token')
+   accessToken: sessionStorage.getItem('bst-access-token')
+      ? sessionStorage.getItem('bst-access-token')
       : null,
-   user: sessionStorage.getItem('ytc-user')
-      ? JSON.parse(sessionStorage.getItem('ytc-user'))
+   user: sessionStorage.getItem('bst-user')
+      ? JSON.parse(sessionStorage.getItem('bst-user'))
       : null,
    loading: false,
 }
