@@ -13,13 +13,15 @@ const HomeScreen = () => {
       dispatch(getPopularVideos())
    }, [dispatch])
 
+   const {videos}=useSelector(state => state.homeVideos)
+
    return (
       <Container>
          <CategoriesBar />
          <Row>
-         {[...new Array (20)].map(() =>(
+         {videos.map((video) =>(
           <Col Lg={3} md={4}>
-           <Video />
+           <Video video={video} key={video.id} />
           </Col>
          ))}
          </Row>
