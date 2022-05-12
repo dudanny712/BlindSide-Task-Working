@@ -12,6 +12,9 @@ import {
    Navigate,
    
  } from "react-router-dom";
+import { useSelector } from 'react-redux'
+
+
 const Layout= ({children}) => {
    const[sidebar, toggleSidebar] = useState(false);
    const handleToggleSidebar =() => toggleSidebar(value=>!value);
@@ -30,11 +33,12 @@ const Layout= ({children}) => {
 }
 const App = () => {
 
+   const {accessToken, loading}= useSelector()
+
 
     
     return(
-        <>
-           
+        <>         
            <BrowserRouter>
            <Routes>
            <Route path="/" element={<Layout><HomeScreen/></Layout>}/>
