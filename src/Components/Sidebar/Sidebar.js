@@ -15,6 +15,7 @@ import { log_out } from '../../redux/actions/auth.action'
 
 
 
+
 const Sidebar = ({sidebar, handleToggleSidebar}) => {
    const dispatch = useDispatch()
    const logOutHandler = () => {
@@ -24,16 +25,19 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
    return (
       <nav className={sidebar ? "sidebar open": "sidebar"}>
          
+            <a href="./">
             <li>
                <MdHome size={23} />
                <span>Home</span>
             </li>
+            </a>
        
-
+            
             <li>
                <MdSubscriptions size={23} />
                <span>Subscriptions</span>
             </li>
+            
   
 
          <li>
