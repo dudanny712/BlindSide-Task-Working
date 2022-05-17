@@ -1,6 +1,6 @@
-#This is the coding challenge for BlindSide:
+#**This is the coding challenge for BlindSide**:
 
-This app was made using React.
+The app was inspired by Youtube. This App used React and Youtube API.
 
 Coding Challenge: 
 
@@ -9,15 +9,16 @@ Create a UI to browse videos.
 The UI has the following functionality:
 
 You can leave comments on the video.
+
 Related videos shown on the video UI.
-And overview page of all videos should be shown.
+
+And overview page of all videos is shown.
+
 The system is protected by a login.
+
 Videos is loaded as persisted data.
-Login should authenticate against a separate service.
 
-The app was inspired by Youtube. This App used React and Youtube API.
-
-
+Login is authenticated against a google login service.
 
 
 
