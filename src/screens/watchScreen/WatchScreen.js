@@ -3,9 +3,9 @@ import { Col, Row } from 'react-bootstrap'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import Comments from '../../components/comments/Comments'
-import VideoHorizontal from '../../components/videoHorizontal/VideoHorizontal'
-import VideoMetaData from '../../components/videoMetaData/VideoMetaData'
+import Comments from '../../Components/comments/Comments'
+import VideoHorizontal from '../../Components/videoHorizontal/VideoHorizontal'
+import VideoMetaData from '../../Components/videoMetaData/VideoMetaData'
 import { Helmet } from 'react-helmet'
 import {
    getRelatedVideos,
