@@ -57,9 +57,10 @@ const App = () => {
            <Routes>
            <Route path="/" element={<Layout><HomeScreen/></Layout>}/>
            <Route path="/login" element={<LoginScreen/>}/>
-           <Route path="/search" element={<Layout><h1>Search Screen</h1></Layout>}/>
+           <Route path="/search" element={<Layout></Layout>}/>
            <Route path="*" element={<Navigate to ="/" />}/>
-           <Route path="/watch/:id" element={<WatchScreen/>}/>
+           <Route path="/watch/:id" element={<Layout><WatchScreen/></Layout>}/>
+           
            </Routes>
            
         </>
